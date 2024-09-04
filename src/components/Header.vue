@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white shadow-md py-4">
+  <header class="bg-white py-4">
     <div class="container mx-auto px-4 flex justify-between items-center">
       <!-- Logo Section -->
       <div class="text-2xl font-bold text-blue-900">Travel Dots</div>
