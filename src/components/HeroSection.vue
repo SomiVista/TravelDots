@@ -1,6 +1,8 @@
 <template>
-  <section class="bg-white py-16">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+  <section class="py-16">
+    <div
+      class="container mx-auto px-4 flex flex-col md:flex-row items-center relative"
+    >
       <!-- Text Section -->
       <div class="md:w-1/2">
         <h2>Best Destinations around the world</h2>
@@ -28,8 +30,15 @@
         </div>
       </div>
       <!-- Image Section -->
-      <div class="md:w-1/2 mt-8 md:mt-0">
+
+      <div class="plane up">
+        <img src="/public/assets/Icons/Plane.png" alt="plane" />
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0 z-20">
         <img src="/public/assets/Traveller.png" alt="Traveler" class="w-full" />
+      </div>
+      <div class="plane down">
+        <img src="/public/assets/Icons/Plane.png" alt="plane" />
       </div>
     </div>
   </section>
@@ -37,4 +46,26 @@
 
 <script setup></script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.plane {
+  position: relative;
+  animation: plane 10s linear 0s infinite reverse;
+}
+.up {
+  top: -250px;
+  right: -300px;
+}
+.down {
+  top: -100px;
+  right: -100px;
+}
+
+@keyframes plane {
+  from {
+    right: -500px;
+  }
+  to {
+    right: 102%;
+  }
+}
+</style>

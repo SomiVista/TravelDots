@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white py-8">
+  <section class="py-8">
     <div class="container mx-auto px-4">
       <!-- Logos Container -->
       <div class="flex flex-wrap justify-center items-center space-x-8">
